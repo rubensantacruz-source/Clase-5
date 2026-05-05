@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thead, tbody y tfoot con CSS</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 400px;
+    }
+    caption {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    thead {
+      background-color: #2c3e50;
+      color: white;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #ecf0f1;
+    }
+    tbody tr:hover {
+      background-color: #d5e8f7;
+    }
+    tfoot {
+      background-color: #27ae60;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Lista de la compra con estilos CSS</caption>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Precio (S/)</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan="2">Total</td>
+        <td>S/ 20.00</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>Destornillador</td><td>1</td><td>S/ 3.00</td>
+      </tr>
+      <tr>
+        <td>Llave inglesa</td><td>2</td><td>S/ 5.00</td>
+      </tr>
+      <tr>
+        <td>Martillo</td><td>1</td><td>S/ 7.00</td>
+      </tr>
+      <tr>
+        <td>Alicate</td><td>1</td><td>S/ 5.00</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
